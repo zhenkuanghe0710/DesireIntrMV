@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Desire</title>
+	<link rel="icon" 
+      type="image/png" 
+      href="logos/AIFlogo-07.png">
+	<!-- Style -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/adventure.css">
+  	<link rel="stylesheet" href="css/jquery.modal.css" type="text/css" media="screen" />
+	<link href='http://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet' type='text/css'>
+	<!-- Dependencies -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery.modal.js" type="text/javascript" charset="utf-8"></script>
+
+	<!--
+<script src="http://cdn.popcornjs.org/code/dist/popcorn.parsers.min.js"></script>
+	<script src="http://cdn.popcornjs.org/code/dist/popcorn.plugins.min.js"></script>
+-->
+	<!-- <script src="js/popcorn.js"></script> -->
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-40874208-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+
+	<section id="main-container">
+	<div class="header">
+		<a href="https://www.facebook.com/audioinflux">
+			<img src="logos/logoWhite.png" alt="AIFlogo-06" width="50" >
+		</a>
+		<a href="http://open.spotify.com/track/1UA2MeOt7kj9Sq6UslEJOY">
+			<h1>Desire</h1>
+		</a>
+	</div>
+	<div class="videos">
+		<div class="choice hidden" onclick="choicePick('a')" id="choice-a" ></div>
+		<div class="choice hidden" onclick="choicePick('b')" id="choice-b" ></div>
+		<div id="share-buttons" class="hidden">
+			<!-- Facebook -->
+			<div class="first-share-button">
+				<a href="http://www.facebook.com/sharer.php?u=http://www.desire.cias.rit.edu" target="_blank"><img src="buttons/facebook.png" alt="Facebook" /></a>
+			</div>
+			<div class="share-button">
+			<!-- Twitter -->
+				<a href="http://twitter.com/share?url=http://www.desire.cias.rit.edu" target="_blank"><img src="buttons/twitter.png" alt="Twitter" /></a>
+			</div>
+			<div class="share-button">
+			<!-- Email -->
+				<a href="mailto:?Subject=Desire - Audioinflux&Body=I%20saw%20this%20and%20thought%20of%20you!%20 http://www.desire.cias.rit.edu"><img src="buttons/mail.png" alt="Email" /></a>
+			</div>
+			<div class="behindSense">
+				<p><a href="http://desire.cias.rit.edu/behind.html">Behind The Scenes Gallery</a></p>
+			</div>
+			<div onclick="togglePlay();"><h3 style="text-align:center;">Replay</h3></div>
+ </div>
+		<video width="854" height="480" data-timeline-sources="scenes/Desire.srt" id="main-media">
+			<source src="scenes/desire.mp4" ></source>
+		</video>
+		<video width="854" height="480" id="choice1b-media" class="hidden">
+			<source src="scenes/choice1b.mp4"></source>
+		</video>
+		<video width="854" height="480" id="choice2b-media" class="hidden">
+			<source src="scenes/choice2b.mp4"></source>
+		</video>
+		<video width="854" height="480" id="choice3b-media" class="hidden">
+			<source src="scenes/choice3b.mp4"></source>
+		</video>
+		<video width="854" height="480" id="choice4b-media" class="hidden">
+			<source src="scenes/choice4b.mp4"></source>
+		</video>
+	</div>
+	<div class="controls">
+		<div onclick="togglePlay();" id="playbutton" class="play"></div>
+		<div onclick="toggleCaptions();" id="captionbutton" class="captionsoff"></div>
+	</div>
+	<div id="timer"></div>
+	<div id="ex1" style="display:none;">
+	<img src="logos/logoAnimation.gif" alt="bloackLogo" width="133" height="133" style="padding-left:125px;" />
+    <h2 style="text-align: center;">Desire Interactive Music Video.</h2>
+    <p style="text-align: center;">Choose your path when you see the logo above in the video.</p>
+    <div style="cursor:pointer; padding-left: 150px;" onclick="beginVideo();"><img src="buttons/play.png" alt="play" width="81" height="45" /></div>
+    
+  </div>
+	</section>
+</body>
+
+	<!-- Program -->
+	<script src="js/popcorn-complete.js"></script>
+	<script src="PopcornNew.js"></script>
+	
+
+</html>
